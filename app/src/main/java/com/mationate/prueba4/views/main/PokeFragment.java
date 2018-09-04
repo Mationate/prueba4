@@ -1,13 +1,10 @@
 package com.mationate.prueba4.views.main;
 
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,13 +16,10 @@ import com.mationate.prueba4.adapters.PokemonAdapter;
 import com.mationate.prueba4.background.GetPokeData;
 import com.mationate.prueba4.models.Pokemon;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
-public class PokeFragment extends Fragment {
+public class PokeFragment extends Fragment  {
 
     private PokemonAdapter adapter;
     private GridLayoutManager layoutManager;
@@ -76,6 +70,8 @@ public class PokeFragment extends Fragment {
 
 
     }
+
+
 
     private class GetPokes extends GetPokeData {
 

@@ -20,11 +20,11 @@
             android:layout_height="96dp"
             android:layout_gravity="center_horizontal"/>
         <TextView
+            android:textAllCaps="true"
             android:id="@+id/nameTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/app_name"/>
+            android:gravity="center_horizontal" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

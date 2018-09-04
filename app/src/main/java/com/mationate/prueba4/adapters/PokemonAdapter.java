@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.mationate.prueba4.R;
 import com.mationate.prueba4.models.Pokemon;
-import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -20,6 +19,8 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.ViewHold
 
     private List<Pokemon> pokeList = new ArrayList<>();
 
+    public PokemonAdapter() {
+    }
 
     @NonNull
     @Override
@@ -29,7 +30,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         Pokemon pokemon = pokeList.get(position);
 
         holder.name.setText(pokemon.getName());
@@ -38,6 +39,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.ViewHold
                 .centerCrop()
                 .fit()
                 .into(holder.photo);
+
     }
 
     @Override

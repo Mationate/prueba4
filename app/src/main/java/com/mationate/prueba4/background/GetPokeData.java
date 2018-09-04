@@ -24,6 +24,7 @@ public class GetPokeData extends AsyncTask<Integer, Void, List<Pokemon>> {
         Call<PokemonWrapper> call = request.getPokemonList(30, offset);
         List<Pokemon> pokemons = new ArrayList<>();
 
+
         try {
 
             Response<PokemonWrapper> response = call.execute();

@@ -1,8 +1,9 @@
 package com.mationate.prueba4.models;
 
-import com.orm.SugarRecord;
 
-public class Pokemon extends SugarRecord {
+import java.io.Serializable;
+
+public class Pokemon implements Serializable {
 
     private int number;
     private String name, url;
